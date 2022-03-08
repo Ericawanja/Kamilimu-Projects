@@ -1,0 +1,169 @@
+*{
+    margin:0;
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+
+    
+}
+.brand_info{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin:30px;
+}
+.logo>img{
+    height:40px;
+    width:240px;
+}
+.nav{
+    display: flex;
+}
+.nav>span{
+    padding:30px;
+    font-size: 19px;
+}
+.register{
+    text-align: center;
+    
+}
+.register>p{
+    font-size: 22px;
+    font-weight: bold;
+}
+#sub_email{
+    padding: 4px;
+    margin: 13px;
+    width: 80%;
+}
+#submit{
+   background-color: rgb(255, 255, 6);
+   border-color:rgb(255, 255, 6) ; 
+   font-weight:900 ;
+   font-size: 22px ;
+   text-align: center;
+   display: inline;
+   width: 180px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+/*products*/
+.products{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+}
+.product_container{
+    border:1px solid black;
+    margin:20px;
+    text-align: center;
+    background-color: rgb(221, 136, 8);
+    font-size: 20px;
+}
+.product_container>p{
+    padding: 6px 0;;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding:4px 0;
+}
+.product_container>button{
+    background-color:rgb(255, 255, 6)  ;
+    padding:8px 10px;
+    margin: 10px;
+    font-size: 19px;
+}
+#product-name{
+    background-color: rgb(111, 110, 112);
+    font-weight: bold;
+    font-size: 22px;
+}
+#product_price{
+    font-weight: bold;
+    font-size: 22px;
+}
+.vision{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.vision>div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    /*padding:10px;*/
+
+}
+.vision>div>span{
+    margin:10px;
+
+}
+.vision>div>span>h3{
+    padding: 5px;
+}
+footer{
+    background-color: #c5bfbfcc;
+    width: 74%;
+    margin: auto;
+    
+}
+footer>div{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+
+}
+footer>div>span{
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 100;
+    
+
+}
+footer>p{
+    text-align: right;
+    padding: 0 10px 10px;
+}
+@media only screen and (max-width: 700px) {
+    .products{
+        grid-template-columns: 40% 40%;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    body{
+        background-color: aqua;
+    }
+    .brand_info{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .nav{
+            
+            flex-direction: column;
+            
+
+    }
+    .nav>span{
+        padding: 5px;
+    }
+    .products{
+        grid-template-columns:  50%;
+    }
+    .vision>div>span>img{
+        display: none;
+    }
+    .vision{
+        text-align: center;
+    }
+    .vision>div>span>h3{
+        font-size: 22px;
+    }
+
+  }
+  
+  

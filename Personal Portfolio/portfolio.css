@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+}
+.nav {
+  background-color: brown;
+  padding: 24px;
+  display: flex;
+  justify-content: end;
+  color: rgb(233, 229, 229);
+  font-size: 21px;
+}
+.nav > span {
+  padding: 0 16px;
+}
+.intro {
+  height: 80%;
+  background-color: rgb(56, 55, 55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 180%;
+}
+.intro > h1 {
+  color: white;
+}
+.intro > p {
+  color: brown;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(16, 2, 68, 0.6);
+}
+.projects > span > h3 {
+  color: aliceblue;
+  font-size: 32px;
+  padding: 10px;
+  margin: 50px;
+}
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 40px;
+}
+.project_container > div {
+  width: 280px;
+}
+.project_container > div > img {
+  height: 280px;
+  width: 100%;
+}
+figcaption {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.projects > button {
+  background-color: black;
+  padding: 15px 22px;
+  margin: 40px;
+}
+.projects > button:hover {
+  background-color: brown;
+}
+.projects > button > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    height:320px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(56, 55, 55);
+    text-align: center;
+    color: aliceblue;
+}
+.footer_container>h2{
+    
+    font-size: 64px;
+}
+.footer_container>p{
+    font-size: 22px;
+}
+.accounts{
+    padding-top: 30px;
+    
+}
+.accounts>span{
+    padding-left: 15px;
+}
+@media only screen and (max-width: 1000px) {
+   .project_container{
+       grid-template-columns: 40% 40%;
+       gap: 20px;
+   } 
+}
